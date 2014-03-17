@@ -1,0 +1,20 @@
+\documentclass[a4paper,twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{url} \urlstyle{sf}
+\usepackage{xspace}
+\usepackage[francais,american]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, pagecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=, pdfsubject=, pdfkeywords=}
+
+%%%%% \dopdffig : macro pour l'inclusion des illustrations %%%%%
+\def\dopdffig#1#2#3#4{%
+    \begin{figure}[ht]\centerline{\includegraphics[width=#2]{#1}}%
+        \caption{#3}\label{#4}\end{figure}}
+
+\begin{document}
+
+\input{fiche_equipe}
+
+\end{document}
