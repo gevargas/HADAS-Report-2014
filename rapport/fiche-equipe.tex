@@ -49,11 +49,11 @@ Our research is related to the changes in devices and softwares:
 \item Cloud computing (virtualization, elasticity, pay-as-you-go ...)
 \end{itemize}
 
-More recently big data management and analysis gives other more challenging prospective. These changes have reduced the cost of creating, capturing, managing and storing information of a sixth of what it was in 2005. This has allowed a scale change in size of data, distribution of data, number of connected devices, and number of users. 
+More recently big data management and analysis introduces  more challenging perspectives. Technological changes have reduced the cost of creating, capturing, managing and storing information of a sixth of what it was in 2005. This has allowed a scale change in the size of data, distribution of data, number of connected devices, and number of users. 
 
-Considering this globalization of data, knowledge and computing resources and because of the quality and intelligence of the expected data management functions, we have been confronted (and still confronted) with a change in the field of databases.
+Considering this globalization of data, knowledge and computing resources and given the quality and intelligence of the expected data management functions, we have been confronted (and still confronted) with a change in the field of databases.
 
-To face this challenges we decide to revisit database systems and consider them not anymore as centralized data storage systems but data management services largely distributed and deployed over different types of large scale systems(grids, peer-to-peer networks, sensor networks, ambient and ubiquitous environments). 
+To face this challenges we decided to revisit database systems and consider them not anymore as centralized data storage systems but data management services largely distributed and deployed over different types of large scale systems (grids, peer-to-peer networks, sensor networks, ambient and ubiquitous environments). 
 Semantics is at the heart of this approach as it is used at all levels of the process of designing or composing data services for handling autonomy, dynamic behavior and heterogeneity of both users and data sources. 
 
 The activities of the group during these past years have been centered on the following themes:
@@ -63,9 +63,9 @@ The activities of the group during these past years have been centered on the fo
 \item  Reasoning on data semantics: we investigate different models and  algorithms  for querying data (or resources) through  possibly heterogeneous and distributed ontologies.
 \end{itemize}
 
-We have participated to the Optimacs and Ubiquest ANR projects that bridge the gap between data management and (web) services into a data management platform and  between networks and data management.   
+We have participated to the Optimacs and Ubiquest ANR projects that bridge the gap between data management and (web) services and  between networks and data management.   
 
-We have been also involved in other ANR projects on context management for software adaptation, handling uncertainty and trust in peer-to-peer data management system. We are involved in the Datalyse project whose objective is to build a smart warehouse demonstrator for the collection, certification, integration, categorization, security, enrichment and sharing of heterogeneous Big Data  of type "Big Data User" (UBD) or from machines, of type "Big Data Monitoring" (MBD). 
+We have been also involved in other ANR projects on context management for software adaptation, handling uncertainty and trust in peer-to-peer data management systems. We are involved in the Datalyse project whose objective is to build a smart warehouse demonstrator for the collection, certification, integration, categorization, security, enrichment and sharing of heterogeneous Big Data  of type "Big Data User" (UBD) or from machines, of type "Big Data Monitoring" (MBD). 
 We also collaborate with industry, especially with ST Microlectronics on novel data mining algorithms able to fully exploit the parallelism of multicore machines. 
 
 Results of our research have direct impact on applications dealing with huge amounts of data and resources largely distributed in pervasive environments, such as data spaces, smart grids and smart buildings, hardware and software observation, and the semantic Web.
@@ -84,7 +84,7 @@ Results of our research have direct impact on applications dealing with huge amo
 %. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -
 
 
-Accessing data concerns several dimensions of large scale systems: number of resources, data volume and data complexity. It basically means using declarative queries that are optimized based on system characteristics.
+Accessing data concerns several aspects of large scale systems: number of resources, data volume and data complexity. It basically means using declarative queries that are optimized based on system characteristics.
 Data mining is another way to query large quantities of data, by extracting interesting patterns from them. Such patterns provide meaningful abstractions of raw data, which are thus less numerous and more appropriate for data analysis. 
 Globally, the difficulty for evaluating queries efficiently on nowadays applications motivates this work to revisit traditional query optimization techniques. The following presents these two aspects of accessing data in the large. It also focuses on works done on querying the social web. 
 
@@ -116,7 +116,7 @@ These research led to the following original contributions:
 
 [3] Lourdes Martinez, Christine Collet, Christophe Bobineau and Etienne Dubl{\'e}. CoBRa for optimizing global queries. BDA, 2013
 
-[4] Carlos-Manuel Lopez-Enriquez, Genoveva Vargas-Solar, Jos{\'e}-Luis Zechinelli-Martini, Christine Collet. Hybrid query generation,  LANMR,  117-128, 2012
+%[4] Carlos-Manuel Lopez-Enriquez, Genoveva Vargas-Solar, Jos{\'e}-Luis Zechinelli-Martini, Christine Collet. Hybrid query generation,  LANMR,  117-128, 2012
 
 \end{description}
 
@@ -199,18 +199,18 @@ Datalyse: Big Data Models and Algorithms, Investissement d'Avenir 2013-2016; ALI
 
 
 Composing services  exported by different organisations is a key issue when building  large scale and data-intensive systems. 
-Composition requires to take into account the characteristics of  eco-systems (e.g., memory and computing, and network capabilities). The composition process uses this knowledge or semantics to dynamically discover and coordinate (ubiquitous) services, and then to adapt the coordination process depending on the availability and change of services. 
-Another important challenge is to consider non functional aspects and QoS (quality of service) criteria such as availability, reliability, and temporal constraints that are crucial when composing data services in a dynamic way. We also have to consider an unlimited set of resources usable via a "pay as U go model", energy consumption or services reputation and provenance models.  
+Composition must take into account the characteristics of  execution environments (e.g., memory and computing, and network capabilities) to dynamically  compose  services, and then to adapt  compositions depending on the availability and evoluation of services. 
+ Compositions can be executed  on platforms providing  unlimited resources through a "pay as U go model", aware of energy consumption or services reputation, provenance, availability, and reliability.  These features  guide the way compositions are specified and executed for fulfilling given user requirements and preferences. These properties are modelled as  non functional aspects and QoS (quality of service) criteria  that can provide guarantees to the execution of compositions and to the way results are delivered.
 
-The research in this theme contributes to the construction of service based data management systems as service coordinations. Once data management is delivered as service coordinations, it can have associated non-functional properties: exception handling and recovery.
-We proposed methodologies, algorithms, languages and tools for designing and executing  service coordinations respecting SLA contracts. 
+Our research in this topic contributes to the construction of service based data management systems as service compositions. Once data management is delivered as a service, it can have associated non-functional properties.
+We proposed methodologies, algorithms, languages and tools for designing and executing  service compositions with non-functional properties expressed as policies. 
 
-We first applied our approach for the management  of queries as coordinations of services, including data services and computing.  
-This leads to the following results: 
+We  applied our approach for the efficient evaluation  of queries as coordinations of services, including data  and computing services.  
+This lead to the following results: 
 \begin{itemize}
-\item  an Hybrid query model for expressing queries as data service coordinations based on workflows. It uses the abstract state machines (ASM) formalism. 
+\item  an Hybrid query model for expressing queries as data service coordinations based on workflows. The approach uses the abstract state machines (ASM) formalism for defining the model.
 
-\item  a query language HSQL (Hybrid Services Query Languages) associated to the hybrid query model and the language MQLiST (Mashup Query Spatio Temporal Language) for integrating hybrid query results in a mashup. Both are extension of SQL. 
+\item  a query language HSQL (Hybrid Services Query Languages) associated to the hybrid query model and the language MQLiST (Mashup Query Spatio Temporal Language) for integrating hybrid query results in a mashup. Both are extensions of SQL. 
 
 \item  an algorithm BP GYO for generating the query workflow that implements a query expressed in HSQL.
 
@@ -218,31 +218,33 @@ This leads to the following results:
 
 \item an hybrid query evaluation engine HYPATIA.
 
+\item an Active Policy model and language for specifying the QoS properties to be associated to service compositions modelled as workflows; and inforcement actions when they are not verified.
+
 \end{itemize}
 
-Another result of our research is linked with the QoS of service coordinations using active policies linked with activities of workflow . 
+
 
 \begin{description}
 
 \item[Contracts:] 
-OPTIMACS (2009-2012)	Agence Nationale de la Recherche, France, Programme ARPEGE LIG, LAMIH, LIRIS Service composition based framework for optimizing queries. Coordinator
+OPTIMACS (2009-2012)	Agence Nationale de la Recherche, France, Programme ARPEGE LIG, LAMIH, LIRIS Service composition based framework for optimizing queries. 
 
 CLEVER (2011-2013) STICAMSUD program  U. de la Rep{\'u}blica, Uruguay, UFRN Brazil, LIG, LAFMIA, LIFO, France
-Environment virtual observatory on cloud. Coordinator
+Environment virtual observatory on cloud. 
 
 SWANS (2014-2016)	CNRS STiC-AMSUD Program U. de la Rep{\'u}blica, Uruguay, UFRN Brazil, LIG, LAFMIA, LIFO, France
 
-(2013-2014)	COST ICT Program : Semantic keyword-based search on structured data sources. Participant
+(2013-2014)	COST ICT Program : Semantic keyword-based search on structured data sources. 
 
-SOGrid (2013-2017)	ADEME Le r{\'e}seau {\'e}lectrique de demain. Participant
+SOGrid (2013-2017)	ADEME Le r{\'e}seau {\'e}lectrique de demain. 
 
-SITAM (2012)	Mexican Council of foreign affairs, Mexique Laboratorio Nacional de Informatica Aplicada, LAFMIA, UDLAP Summit Information Technologies in Mexico. Participant
+%SITAM (2012)	Mexican Council of foreign affairs, Mexique Laboratorio Nacional de Informatica Aplicada, LAFMIA, UDLAP Summit Information Technologies in Mexico. Participant
 
-AIWS (2012 - 2014)	PEPS  CNRS program (LIRIS-LIG) Discovering conversations among services by analyzing event logs - Coordinator
+AIWS (2012 - 2014)	PEPS  CNRS program (LIRIS-LIG) Discovering conversations among services by analyzing event logs.
 
-CAISES (2012 - 2015)	European Union FP7, IRESES program (UK, France, Ukrania, China) Observation and industrial management on the cloud.  Participant
+CAISES (2012 - 2015)	European Union FP7, IRESES program (UK, France, Ukrania, China) Observation and industrial management on the cloud.  
 
-S2EUNET (2010 - 2014)	European Union FP7, IRESES program Norway, Spain, USA, Mexico, China Access to continuous data on heterogeneous networks. Participant
+%S2EUNET (2010 - 2014)	European Union FP7, IRESES program Norway, Spain, USA, Mexico, China Access to continuous data on heterogeneous networks. Participant
   
 \item[Key references:]~% (if necessary)
 %\cite{di:bbg+09} 
@@ -293,7 +295,7 @@ The proposed approach relies on recent complexity  results showing that the expr
 
 \end{description}
 
-  synthe se du nombre de publications en termes de quantite  et qualite 
+  synthese du nombre de publications en termes de quantite  et qualite 
   production et diffusion de logiciels ...
 
 
@@ -338,7 +340,7 @@ discussion de l'{\'e}volution des publications en terme de quantit{\'e} et quali
 
 \item Three prices at SSSW 12 (Summer School on Ontology Engineering and the Semantic Web) 
 
-\item Best Paper Award track Embedded Software � DATE 2014.
+\item Best Paper Award track Embedded Software, DATE 2014.
 
 % \item  
 
@@ -377,14 +379,18 @@ Alex, corriger/completer STP
 \ \\
 
 \begin{description}
-\item[Mexico:] the group has a long tradition in developing cooperations between the Mexican and French governments in TICS for 20 years. Since 2008, G. Vargas-Solar is deputy director of the French Mexican Laboratory in Informatics and Automatic Control (LAFMIA, UMI 371) an international unit of the CNRS. 
-The cooperation of HADAS with Mexico has lead to scientific results and to the education of graduate students through co-advising contracts (Orchestra project, ??? ) and the organisation of thematic schools. 
-These activities include the participation of Ch. Collet and Ch. Bobineau and their PHD students 
-The cooperation with Mexico includes the most important private and public institutions of that country: three major public research centres CINVESTAV, CICESE, INAOE, private centres like LANIA; and important universities like UDLAP, UATx, ITESM. 
-The main research topics of the cooperation are services based infrastructures for managing distributed data with reliably, services based query processing and flexible data storage services.  Collaboration on theses topics have been formalized with PhD students: A. Portila ? , V. Cuevas, J. Espinosa-Oviedo, Carlos-Manuel LOPEZ-ENRIQUEZ and Juan Carlos Castrejo�n. 
+\item[Mexico:] the group has a long tradition (20 years) in developing cooperation actions between the Mexican and French governments in TICS. 
+The cooperation of HADAS with Mexico includes the most important private and public institutions of that country: three major public research centres CINVESTAV, CICESE, INAOE, private centres like LANIA; and important universities like UDLAP, UATx, ITESM. 
+The main research topics in the cooperation are services based infrastructures for managing distributed data with non-functional properties, services based query processing and flexible data storage services.  Collaboration on these topics has been formalized through projects (see below) and PhD students: A. Portila-Flores \footnote{Double diploma funded by the PROMEP Mexican program and the Foundation Jenkins.}, V. Cuevas \footnote{Funded by the project ANR - ARPEGE OPTIMACS.}, J. Espinosa-Oviedo \footnote{Funded through a CONACyT fellowship in the context of the ECOS-ANUIES project ORCHESTRA.}, Carlos-Manuel Lopez-Enriquez \footnote{Funded by the project ANR - ARPEGE OPTIMACS, the CONACyT and the Jenkins Foundation} and Juan Carlos Castrejon \footnote{Funded by an excellence fellowship of the doctoral school MSTII.}.  Ch. Collet, and G. Vargas-Solar co-advised these students and with Ch. Bobineau they also advised master students of Mexican institutions. Some of them continued their education as PhD. students in France: Lourdes A. Martinez Medina \footnote{Funded by the ANR project UBIQUEST.}. 
 
--- To be revised (Geno) 
-\ \\
+
+Since 2008, G. Vargas-Solar is deputy director of the French Mexican Laboratory in Informatics and Automatic Control (LAFMIA, UMI 3175 http://lafmia.imag.fr) an international unit of the CNRS. 
+The cooperation of HADAS with Mexico and the LAFMIA has lead to scientific results and to the education of graduate students through co-advising contracts and the organisation of thematic schools. 
+
+
+
+%-- To be revised (Geno) 
+%\ \\
 
 
 \item[Vietnam:] we have developed relations with the MICA laboratory in Hanoi (3 doctors formed) and participated to the Asian projects. 
@@ -393,14 +399,20 @@ The main research topics of the cooperation are services based infrastructures f
 \ \\
 \item[Brazil:] 
 
-Nous avons des collaborations avec l'Universite� Federal Rio Grande do Norte, d partement DIMAP,  equipe FORALL depuis 2007. Les collaborations portent sur la gestion de donn ees   base de services sur le cloud: int egration s mantique de services de donne es   travers les mashups, coordination de services   base de politiques,  traitement de donn es sur cloud avec des approches Map-Reduce, des langages d'interrogation de donne es   base de composition de services.  
-Nous avons privil gi e des applications sur les donn es me t eorologiques et la distribution  nerg tique. Cette recherche s'est r ealis e   travers des projets soutenus par Microsoft (e-CLOUDSS), par le programme STICAMSUD (CLEVER et SWANS) et   travers le co-encadrement d'e tudiants de master et de th se. 
-La CAPES a  egalement finance  des postdocs et le CNRS des postes de prof invite .
+The collaboration with Brazil includes mainly
+the Universite Federal Rio Grande do Norte, department DIMAP,  equipe FORALL since 2007. This collaboration concerns service based data management on the cloud: semantic integration of data services through mashups, policy based service coordination, data processing on the cloud using map-reduce models, query langagues based on service compositions.  We priviledged applications on meteorology data and energy distribution. These commun research activities were funded by different organizations: 
+Microsoft-LACCIR (e-CLOUDSS), the CNRS STICAMSUD program (CLEVER, SWANS) and by co-advising graduate students. In addition, postdoctoral and PhD and senior scientists internships in HADAS were funded by the CAPES and the CNRS.   
 
-\item[??:] other countries ??? 
+\item[Uruguay:] 
 
--- To be completed (all)
-\ \\
+\item[Spain:] 
+
+\item[Italy:]
+
+%other countries ??? 
+
+%-- To be completed (all)
+%\ \\
 
 \end{description}
 
@@ -410,7 +422,7 @@ La CAPES a  egalement finance  des postdocs et le CNRS des postes de prof invite
 % subsection visibility_and_attractivity (end)
 
 %. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -
-\subsubsection*{Contribution to the Scientific community}
+\subsubsection*{Contribution to the Scientific Community}
 %. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -
 
 
@@ -452,7 +464,7 @@ La CAPES a  egalement finance  des postdocs et le CNRS des postes de prof invite
 
 \item {\it Member of the IJCAI-09 advisory committee}: M.-C. Rousset 
 
-\item {\it Deputy director of the French Mexican Laboratory in Informatics and Automatic Control (LAFMIA, UMI 371) (2008 - ) }:  G. Vargas-Solar 
+\item {\it Deputy director of the French Mexican Laboratory in Informatics and Automatic Control (LAFMIA, UMI 3175) (2008 - ) }:  G. Vargas-Solar 
 
 \end{itemize}
 
@@ -468,7 +480,7 @@ La CAPES a  egalement finance  des postdocs et le CNRS des postes de prof invite
 \setlength{\itemsep}{-0.1cm}
 \item {\it PVLDB, publication of the Very Large Database Endowment:} Ch. Collet (2008-2010??)
 \item {\it Computacion y sistemas}, G. Vargas-Solar, since 2002.
-\item {\it e-Gnosis, electronic journal}, G. Vargas-Solar, since 2004.
+%\item {\it e-Gnosis, electronic journal}, G. Vargas-Solar, since 2004.
 \item {\it ICDIM Journal special issue}, G. Vargas-Solar, since 2005.
 \item {\it KER Journal special issue}, G. Vargas-Solar, since 2007.
 \item {\it ActaPress Journal}, G. Vargas-Solar, since 2008.
