@@ -7,18 +7,17 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 
-%%% ATTENTION on ne peut pas modifier le main.tex
-\usepackage{amssymb}
-\usepackage{eurosym}
-\usepackage[T1]{fontenc}
-
-
 \hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, pagecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=, pdfsubject=, pdfkeywords=}
 
 %%%%% \dopdffig : macro pour l'inclusion des illustrations %%%%%
 \def\dopdffig#1#2#3#4{%
     \begin{figure}[ht]\centerline{\includegraphics[width=#2]{#1}}%
         \caption{#3}\label{#4}\end{figure}}
+
+%%% ATTENTION A AJOUTER
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 
