@@ -120,14 +120,14 @@ Globally, the difficulty for evaluating queries efficiently on nowadays applicat
 \subsubsection*{1- CBR query optimization}
 %. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -
 
-Our research contributes to the development of new distributed query optimization techniques. It relies on the adaptation of machine learning, more precisely Case-Based Reasoning(CBR), and pseudo random search space exploration (also exploiting the case base) to produce efficient  query execution plans according to application specific optimization objectives expressed over resource consumption (e.g. time, energy, number of messages).  The query plan generation considered multiple optimization objectives customizable to application requirements (QoS based Hybrid Query optimization).
+Our research contributes to the development of new distributed query optimization techniques. It relies on the adaptation of machine learning, more precisely Case-Based Reasoning(CBR), and pseudo random search space exploration (also exploiting the case base) to produce efficient  query execution plans according to application specific optimization objectives expressed over resource consumption (e.g. time, energy, number of messages).  The query plan generation considered multiple optimization objectives customizable to application requirements (QoS based Hybrid Query optimization) [3].
 This research led to the following original contributions:
 \begin{itemize}
 \item  A query optimization approach that uses cases generated from the evaluation of similar past queries. A query case comprises: (i) the query (the problem), (ii) the query plan (the solution) and (iii) the measures of computational resources consumed during the query plan execution (the evaluation of the solution). 
 
 \item  A query plan generation process [1] that uses classical query optimization heuristics and makes decisions randomly when information on data is not available (e.g. for ordering joins, selecting algorithms or choosing message exchange protocols). This process also exploits the CBR principle for generating plans for sub-queries, thus accelerating the learning of new cases. 
 
-\item  A Simulation Platform [2] allowing to experiment distributed query optimization and rule-based programs over a set of distributed data-enabled devices hosting virtual machines(VM). A VM integrates a query optimization engine [3] implementing the above techniques. 
+\item  A Simulation Platform [2] allowing to experiment distributed query optimization and rule-based programs over a set of distributed data-enabled devices hosting virtual machines(VM). A VM integrates a query optimization engine [4] implementing the above techniques. 
 \end{itemize}
 
 \begin{description}
@@ -140,13 +140,13 @@ This research led to the following original contributions:
 \item[Key references:]~% (if necessary)
 %\cite{di:bbg+09} 
 
-[1]	Lourdes Martinez, Christine Collet, Christophe Bobineau, Etienne Dubl{\'e}. The QOL approach for optimizing distributed queries without complete knowledge. IDEAS, 91-99, 2012
+[1] Lourdes Martinez, Christine Collet, Christophe Bobineau, Etienne Dubl{\'e}: The QOL approach for optimizing distributed queries without complete knowledge. IDEAS, 91-99, 2012
 
-[2] Ahmad Ahmad-Kassem, Christophe Bobineau, Christine Collet, Etienne Dubl{\'e}, St{\'e}phane Grumbach, FudaMa, Lourdes Martinez, St{\'e}phane Ub{\'e}da. UBIQUEST, for rapid prototyping of networking applications. IDEAS, 187-192, 2012
+[2]  Ahmad Ahmad-Kassem, Christophe Bobineau, Christine Collet, Etienne Dubl{\'e}, St{\'e}phane Grumbach, FudaMa, Lourdes Martinez, St{\'e}phane Ub{\'e}da: UBIQUEST, for rapid prototyping of networking applications. IDEAS, 187-192, 2012
 
-[3] Lourdes Martinez, Christine Collet, Christophe Bobineau and Etienne Dubl{\'e}. CoBRa for optimizing global queries. BDA, 2013
+[3] Carlos-Manuel Lopez-Enriquez, Genoveva Vargas-Solar, Jos{\'e}-Luis Zechinelli-Martini:  Christine Collet. Hybrid query generation,  LANMR,  117-128, 2012
 
-%[4] Carlos-Manuel Lopez-Enriquez, Genoveva Vargas-Solar, Jos{\'e}-Luis Zechinelli-Martini, Christine Collet. Hybrid query generation,  LANMR,  117-128, 2012
+[4] Lourdes Martinez, Christine Collet, Christophe Bobineau and Etienne Dubl{\'e}: CoBRa for optimizing global queries. BDA, 2013
 
 \end{description}
 
@@ -179,7 +179,7 @@ They have improved the way to discover periodic behaviors and their disruption i
 
 [1] Sofiane Lagraa, Alexandre Termier, Fr{\'e}d{\'e}ric P{\'e}trot: Data mining MPSoC simulation traces to identify concurrent memory access patterns. DATE 2013: 755-760
 
-[2] Benjamin N{\'e}grevergne, Alexandre Termier, Marie-Christine Rousset, Jean-Francois M{\'e}haut: ParaMiner: a generic pattern mining algorithm for multi-core architectures, Data Mining and Knowledge Discovery, 2013
+[2] Benjamin N{\'e}grevergne, Alexandre Termier, Marie-Christine Rousset, Jean-Francois M{\'e}haut: ParaMiner: a Generic Pattern Mining Algorithm for Multi-Core Architectures. Journal of Data Mining and Knowledge Discovery (DMKD), 28(3):593-633, 2014. 
 
 [3] Christiane Kamdem Kengne, Leon Constantin Fopa, Alexandre Termier, Noha Ibrahim, Marie-Christine Rousset, Takashi Washio, Miguel Santana: Efficiently rewriting large multimedia application execution traces with few event sequences. KDD 2013: pp 1348-1356
 
@@ -187,7 +187,7 @@ They have improved the way to discover periodic behaviors and their disruption i
 
 [5] Trong Dinh Thac Do, Anne Laurent, Alexandre Termier: PGLCM: Efficient Parallel Mining of Closed Frequent Gradual Itemsets, ICDM 2010: pp 138-147
 
-[6] Sofiane Lagraa, Alexandre Termier, Frédéric Pétrot: Scalability Bottlenecks Discovery in MPSoC Platforms Using Data Mining on Simulation Traces, Design Automation and Test in Europe Conference (DATE), 2014, to appear.
+[6] Sofiane Lagraa, Alexandre Termier, Fr{\'e}d{\'e}ric P{\'e}trot: Scalability Bottlenecks Discovery in MPSoC Platforms Using Data Mining on Simulation Traces, Design Automation and Test in Europe Conference (DATE), 2014, to appear.
 
 \end{description}
 
@@ -237,7 +237,7 @@ Social Web Data access also concerns optimization. Data is stored within data ce
 
 Composing services  exported by different organizations is a key issue when building  large scale and data-intensive systems. 
 Composition must take into account the characteristics of  execution environments (e.g., memory and computing, and network capabilities) to dynamically  compose  services, and then to adapt  compositions depending on the availability and evolution of services. 
- Compositions can be executed  on platforms providing  unlimited resources through a "pay as U go model", aware of energy consumption or services reputation, provenance, availability, and reliability[2].  These features  guide the way compositions are specified and executed for fulfilling given user requirements and preferences[3]. These properties are modeled as  non functional aspects and QoS (quality of service) criteria  that can provide guarantees to the execution of compositions and to the way results are delivered.
+ Compositions can be executed  on platforms providing  unlimited resources through a "pay as U go model", aware of energy consumption or services reputation, provenance, availability, and reliability[2].  These features  guide the way compositions are specified and executed for fulfilling given user requirements and preferences[3]. These properties are modeled as  non functional aspects and QoS (quality of service) criteria  that can provide guarantees to the execution of compositions and to the way results are delivered[5].
 
 Our research in this topic contributes to the construction of service based data management systems as service compositions. Once data management is delivered as a service, it can have associated non-functional properties.
 We proposed methodologies, algorithms, languages and tools for designing and executing  service compositions with non-functional properties expressed as policies. 
@@ -247,15 +247,13 @@ This lead to the following results:
 \begin{itemize}
 \item  an Hybrid query model for expressing queries as data service coordinations based on workflows. The approach uses the abstract state machines (ASM) formalism for defining the model[1].
 
-\item  a query language HSQL (Hybrid Services Query Languages) associated to the hybrid query model and the language MQLiST (Mashup Query Spatio Temporal Language) for integrating hybrid query results in a mashup. Both are extensions of SQL[5]. 
+\item  a query language HSQL (Hybrid Services Query Languages) associated to the hybrid query model and the language MQLiST (Mashup Query Spatio Temporal Language) for integrating hybrid query results in a mashup. Both are extensions of SQL[7]. 
 
-\item  an algorithm BP GYO for generating the query workflow that implements a query expressed in HSQL[4].
+\item  an algorithm BP GYO for generating the query workflows search space that implement an hybrid query and that respect an associated SLA expressed as an aggregation of measures (economic, temporal and energetic costs)[5].
 
-% An algorithm for computing computing the query workflows search space that implement an hybrid query and that respect an associated SLA expressed as an aggregation of measures (economic, temporal and energetic costs).
+\item an hybrid query evaluation engine HYPATIA[4].
 
-\item an hybrid query evaluation engine HYPATIA[1].
-
-\item an Active Policy model and language for specifying the QoS properties to be associated to service compositions modeled as workflows; and enforcement actions when they are not verified[5,6].
+\item an Active Policy model and language for specifying the QoS properties to be associated to service compositions modeled as workflows; and enforcement actions when they are not verified[3,7].
 
 \end{itemize}
 
@@ -273,17 +271,22 @@ This lead to the following results:
 \item[Key references:]~% (if necessary)
 %\cite{di:bbg+09} 
 
-[1] V. Cuevas-Vicenttin, G.  Vargas-Solar, C. Collet, Evaluating Hybrid Queries through Service Coordination in HYPATIA, In Proceedings of the 15th International Conference on Extending Database Technology (EDBT), Berlin, Germany, 2012
+[1] Victor Cuevas-vicenttin, Christine  Collet, Genoveva Vargas-Solar, Noha  Ibrahim and Christophe Bobineau: Coordinating Services for Accessing and Processing Data in Dynamic Environments, In Proceedings of the CoopIS 2010 18th International Conference on Cooperative Information Systems, Greece, LNCS, Vol. 6426/2010, 309-325, oct. 2010. 
 
-[2] T. Delot, S. Ilarri, M. Thilliez, G.  Vargas-Solar, S. Lecomte, Multi-scale query processing in vehicular networks, In Journal of Ambient Intelligence and Humanized Computing, Springer Verlag, ISSN 1868?5137, 2(3), 2011, pp. 213-226
+[2] Thierry Delot, S. Ilarri, Marie Thilliez, Genoveva Vargas-Solar, Sylvain Lecomte: Multi-scale query processing in vehicular networks, In Journal of Ambient Intelligence and Humanized Computing, Springer Verlag, ISSN 1868?5137, 2(3), 2011, pp. 213-226
 
-[ 3]	Genoveva Vargas-Solar, Catarina Ferreira da Silva, Parisa Ghodous, Jos{\'e}-Luis Zechinelli-Martini, Moving energy consumption control into the cloud by coordinating services, International Journal of Computing Applications, Special Issue. December 2013.
+[3] Javier A. Espinosa-Oviedo, Genoveva Vargas-Solar, Jos{\'e}-Luis Zechinelli-Martini, Christine Collet: Policy driven services coordination for building social networks based applications. In Proc. of the 8th Int. Conference on Services Computing (SCC'11), Work-in-Progress Track, Washington, DC, USA, July 2011.
 
-[4] Carlos-Manuel Lopez-Enriquez, Genoveva Vargas-Solar, Jos{\'e}-Luis Zechinelli-Martini, Christine Collet, Hybrid query generation,  LANMR, 2012: pp. 117-128, .
+[4] Victor  Cuevas-Vicenttin, Genoveva  Vargas-Solar, Christine Collet: Evaluating Hybrid Queries through Service Coordination in HYPATIA, In Proceedings of the 15th International Conference on Extending Database Technology (EDBT demo session), Berlin, Germany, 2012
 
-[5] Valeria de Castro, Martin A. Musicante, Umberto Souza da Costa, Pl{\'a}cido A. de Souza Neto, and Genoveva Vargas-Solar, Supporting Non-Functional Requirements in Services Software Development Process: An MDD Approach, In Proceedings of the 40th International Conference on Current Trends in Theory and Practice of Computer Science,  LNCS Springer Verlag, High Tatras, Slovakia, January, 2014. 
+[5] Carlos-Manuel Lopez-Enriquez, Genoveva Vargas-Solar, Jos{\'e}-Luis Zechinelli-Martini: Christine Collet, Hybrid query generation,  LANMR, 2012: pp. 117-128
 
-[6] Javier A. Espinosa-Oviedo, Genoveva Vargas-Solar, Jos{\'e}-Luis Zechinelli-Martini, Christine Collet. Policy driven services coordination for building social networks based applications. In Proc. of the 8th Int. Conference on Services Computing (SCC'11), Work-in-Progress Track, Washington, DC, USA, July 2011.
+[6] Genoveva Vargas-Solar, Catarina Ferreira da Silva, Parisa Ghodous, Jos{\'e}-Luis Zechinelli-Martini: Moving energy consumption control into the cloud by coordinating services, International Journal of Computing Applications, Special Issue. December 2013.
+
+[7] Valeria de Castro, Martin A. Musicante, Umberto Souza da Costa, Pl{\'a}cido A. de Souza Neto, and Genoveva Vargas-Solar: Supporting Non-Functional Requirements in Services Software Development Process: An MDD Approach, In Proceedings of the 40th International Conference on Current Trends in Theory and Practice of Computer Science,  LNCS Springer Verlag, High Tatras, Slovakia, January, 2014. 
+
+
+
 \end{description}
 
 %. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -. - . -
@@ -306,15 +309,15 @@ The proposed approach relies on recent complexity  results showing that the expr
 \item[Key references:]~% (if necessary)
 %\cite{di:bbg+09} 
 
-[1] Robust Module-based Data Management. Francois Goasdou and Marie-Christine Rousset. IEEE Transactions on Knowledge and Data Engineering , Volume 25, Issue 3, March 2013, pages 648-661. 
+[1] Francois Goasdou and Marie-Christine Rousset: Robust Module-based Data Management. IEEE Transactions on Knowledge and Data Engineering , Volume 25, Issue 3, March 2013, pages 648-661. 
 
-[2] Alignment-based trust for resource finding in semantic P2P networks. Manuel Atencia, Jerome Euzenat, Giuseppe Pirro and Marie-Christine Rousset. Proceedings of ISWC 2011 (10th International Semantic Web Conference). 
+[2] Manuel Atencia, Jerome Euzenat, Giuseppe Pirro and Marie-Christine Rousset: Alignment-based trust for resource finding in semantic P2P networks. Proceedings of ISWC 2011 (10th International Semantic Web Conference). 
 
-[3] Trust in Networks of Ontologies and Alignments. Manuel Atencia, Mustafa Al Bakri and Marie-Christine Rousset.  Knowledge and Information Systems, Volume 37, number 3, December 2013, 28 pages. 
+[3] Manuel Atencia, Mustafa Al Bakri and Marie-Christine Rousset: Trust in Networks of Ontologies and Alignments.  Knowledge and Information Systems, Volume 37, number 3, December 2013, 28 pages. 
 
-[4] Discovery of Probabilistic Mappings between Taxonomies: Principles and Experiments Remi Tournaire, Jean-Marc Petit, Marie-Christine Rousset, and Alexandre Termier. Journal of Data Semantics (JoDS), Volume 15, pages 66-101. 
+[4] Remi Tournaire, Jean-Marc Petit, Marie-Christine Rousset, and Alexandre Termier: Discovery of Probabilistic Mappings between Taxonomies: Principles and Experiments. Journal of Data Semantics (JoDS), Volume 15, pages 66-101. 
 
-[5] Web Data Management, Serge Abiteboul, Ioana Manolescu, Philippe Rigaux, Marie-Christine Rousset, Pierre Senellart, book published by Cambridge University Press. 
+[5] Serge Abiteboul, Ioana Manolescu, Philippe Rigaux, Marie-Christine Rousset, Pierre Senellart: Web Data Management,  book published by Cambridge University Press. 
 
 \end{description}
 
@@ -581,7 +584,7 @@ Conference SIIE'2012 (4th internationale conference  on information systems and 
 
 \item {\it International Conference on Data Engineering (ICDE)}:  Ch. Collet (2009)
 
-\item {\it IInternational Conference on Web Engineering (ICWE)}:  Ch. Collet (2010)
+\item {\it International Conference on Web Engineering (ICWE)}:  Ch. Collet (2010)
 
 \item {\it International Conference on Model \& Data Engineering (MEDI)}:  Ch. Collet (2011)
 
@@ -821,7 +824,7 @@ The collaboration with Uruguay concerns the University of La Republica since 200
 The collaboration with Spain concerns the region of Madrid and includes Universidad Rey Juan Carlos and Universidad Politecnica de Madrid. The collaboration concerns the specification of service oriented methodologies including non-functional properties. Collaboration actions concern visits of senior scientists, participation in PhD. viva, development of plug-ins for building a framework implementing the methodology $\pi$-SODM that we have proposed in the PhD of Placido Souza Neto. 
 
 \item[Canada:]
-HADAS group is participating in the LIA {\em Contrôle et Communication pour le Smart Grid} (CCSG) started in 2013. Canadian partners are {\em Institut National de la Recherche Scientifique} (INRS), McGill University and Hydro-Qu\'ebec. Collaboration actions concern visits of senior and junior scientists.
+HADAS group is participating in the LIA {\em Controle et Communication pour le Smart Grid} (CCSG) started in 2013. Canadian partners are {\em Institut National de la Recherche Scientifique} (INRS), McGill University and Hydro-Qu\'ebec. Collaboration actions concern visits of senior and junior scientists.
 
 \end{description}
 
